@@ -1,41 +1,45 @@
-# Website
+# 📘 VML Library - Documentación de Proyectos
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Este repositorio contiene la documentación de los proyectos de la agencia **VML**, organizada por clientes y versiones. Utilizamos **Docusaurus** para estructurar y visualizar la documentación.
 
-### Installation
+## 🚀 Instalación en Local
 
-```
-$ yarn
-```
 
-### Local Development
-
-```
-$ yarn start
+### Clonar el Repositorio
+```bash
+git clone https://github.com/albertogalvisvml/vml-library.git
+cd vml-library
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+### Instalar Dependencias
+```bash
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Iniciar el Servidor Local
+```bash
+npm run start
+```
+Esto ejecutará el sitio en [`http://localhost:3000`](http://localhost:3000).
 
-### Deployment
-
-Using SSH:
+## 🏗️ Estructura del Proyecto
 
 ```
-$ USE_SSH=true yarn deploy
+vml-library/
+│── docs/                # Documentación organizada por clientes y versiones
+│── static/              # Archivos estáticos como imágenes o PDFs
+│── src/                 # Código fuente de Docusaurus
+│── docusaurus.config.js  # Configuración principal del sitio
+│── sidebars.ts          # Definición de la barra lateral de navegación
+│── package.json         # Dependencias del proyecto
+└── README.md            # Este archivo
 ```
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Actualizar Documentación
+Para agregar o modificar documentación:
+1. Edita o crea archivos `.md` dentro de `docs/`.
+2. Si es necesario, actualiza `sidebars.ts` para reflejar cambios en la navegación.
+3. Reinicia el servidor local con:
+   ```bash
+   npm run start
+   ```
